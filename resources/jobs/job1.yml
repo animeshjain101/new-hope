@@ -1,0 +1,13 @@
+resources:
+  jobs:
+    EXTRACT_AND_LOAD:
+      name: EXTRACT AND LOAD
+      tasks:
+        - task_key: extract_load
+          notebook_task:
+            notebook_path: /Workspace/Users/animeshjainwork@gmail.com/new
+              hope/new-hope/pysparks/orders_extract_load
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
